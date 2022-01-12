@@ -10,6 +10,7 @@ package zfs
 
 /*
 #cgo CFLAGS: -I /usr/include/libzfs -I /usr/include/libspl -DHAVE_IOCTL_IN_SYS_IOCTL_H -D_GNU_SOURCE
+#cgo freebsd CFLAGS: -I /usr/src/sys/contrib/include/libzfs -I /usr/src/sys/contrib/openzfs/lib/libspl/include/os/freebsd -I /usr/src/sys/contrib/openzfs/lib/libspl/include -I /usr/src/sys/contrib/openzfs/include -DHAVE_IOCTL_IN_SYS_IOCTL_H -D_GNU_SOURCE
 #cgo LDFLAGS: -lzfs -lzpool -lnvpair
 
 #include <stdlib.h>
